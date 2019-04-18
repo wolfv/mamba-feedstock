@@ -1,6 +1,6 @@
 {% set name = "mamba" %}
-{% set version = "0.0.4" %}
-{% set sha256 = "b868ca5225c41f7c549d150ad6bc9fee1a759ea1ec46f3716a7c7ac909cd409b" %}
+{% set version = "0.0.5" %}
+{% set sha256 = "d833b279926183ad42edfd1c9ad8df5d88cdc2596e0fb40f9cfb1a51420d491f" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - pip
     - pybind11 2.2.*
     - conda 4.6.*
-    - libsolv
+    - libsolv 0.7.4
   run:
     - python
     - conda 4.6.*
